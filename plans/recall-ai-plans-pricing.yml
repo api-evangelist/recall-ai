@@ -1,0 +1,79 @@
+specificationVersion: "0.1"
+id: recall-ai-plans-pricing
+name: Recall.ai Plans and Pricing
+description: Pricing plans and tiers for the Recall.ai Meeting Bot API and Desktop Recording SDK. Billing is per-second, usage-based with no monthly platform fee. Pricing updated 2026.
+url: https://www.recall.ai/pricing
+plans:
+  - name: Pay As You Go
+    description: Usage-based plan for early-stage startups and developers building proofs of concept. No monthly platform fee — pay only for active usage.
+    url: https://www.recall.ai/pricing
+    free: true
+    freeDetails: First 5 hours of recording included as complimentary trial credits.
+    pricing:
+      - description: Meeting bot recording (per hour, prorated to nearest second)
+        type: usage
+        unit: recording-hour
+        amount: 0.50
+        currency: USD
+      - description: Built-in Recall.ai transcription (per hour)
+        type: usage
+        unit: recording-hour
+        amount: 0.15
+        currency: USD
+      - description: Extended storage beyond 7-day free tier (per media hour per 30 days)
+        type: usage
+        unit: media-hour-30-days
+        amount: 0.05
+        currency: USD
+      - description: Web 4-core bot variant premium (per hour, added to base)
+        type: usage
+        unit: recording-hour
+        amount: 0.10
+        currency: USD
+      - description: Web GPU bot variant premium (per hour, added to base)
+        type: usage
+        unit: recording-hour
+        amount: 1.00
+        currency: USD
+    features:
+      - Meeting Bot API access
+      - Desktop Recording SDK access
+      - Calendar Integration API (Google and Microsoft)
+      - Video and audio recordings (async and real-time)
+      - Participant metadata and chat messaging
+      - Media streaming (real-time)
+      - Support for Zoom, Google Meet, Microsoft Teams, Webex, GoTo Meeting, Slack Huddles
+      - 7 days free recording storage
+      - US, EU, and JP data residency options
+      - No minimum usage or platform fee
+  - name: Launch
+    description: Volume-discounted plan for companies launching their product into production. Custom pricing with reduced per-hour rates based on committed usage.
+    url: https://www.recall.ai/pricing
+    free: false
+    pricing:
+      - description: Recording and transcription at volume-discounted rates (custom)
+        type: custom
+        unit: recording-hour
+        currency: USD
+    features:
+      - All Pay As You Go features
+      - Volume-discounted recording rates
+      - Volume-discounted transcription rates
+      - Dedicated onboarding support
+  - name: Enterprise
+    description: Full-service plan for large companies requiring white-glove support, advanced security, and compliance guarantees.
+    url: https://www.recall.ai/pricing
+    free: false
+    pricing:
+      - description: Custom enterprise pricing negotiated by contract
+        type: custom
+        unit: recording-hour
+        currency: USD
+    features:
+      - All Launch features
+      - Whiteglove Slack support
+      - SSO authentication
+      - Uptime SLA guarantees
+      - Custom contract redlining
+      - BAA for HIPAA compliance
+      - Premium security and infrastructure options

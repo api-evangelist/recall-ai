@@ -1,0 +1,64 @@
+specificationVersion: "0.1"
+id: recall-ai-rate-limits
+name: Recall.ai Rate Limits
+description: >
+  Recall.ai does not impose explicit per-request rate limits on its REST API as documented publicly. There are no additional charges for individual API requests. Usage limits are governed by active bot and recording time, which is billed per second. Bot variants (standard, web_4_core, web_gpu) have different infrastructure tiers. Developers should use webhooks rather than polling endpoints for bot status changes to avoid unnecessary API calls.
+url: https://docs.recall.ai/docs/calculating-usage
+limits:
+  - scope: API Requests
+    description: No documented hard rate limits on individual REST API calls. Recall.ai explicitly states there are no additional charges for individual API requests.
+    limit: null
+    unit: requests
+    period: null
+    notes: Use webhook events instead of polling for bot status changes in production.
+  - scope: Meeting Bot - Standard
+    description: Base meeting bot recording usage billed per second of active bot time from joining_call event to terminal event.
+    limit: null
+    unit: recording-hours
+    period: per-second-billing
+    costPerUnit: 0.50
+    costCurrency: USD
+    notes: Active time includes waiting_room and in_call_no_recording states.
+  - scope: Meeting Bot - Web 4-Core Variant
+    description: Premium bot variant with 4-core web infrastructure, adding $0.10/hr to the base recording rate.
+    limit: null
+    unit: recording-hours
+    period: per-second-billing
+    costPerUnit: 0.60
+    costCurrency: USD
+    notes: Base $0.50/hr + $0.10/hr premium = $0.60/hr total.
+  - scope: Meeting Bot - Web GPU Variant
+    description: Premium bot variant with GPU web infrastructure for high-compute workloads, adding $1.00/hr to the base recording rate.
+    limit: null
+    unit: recording-hours
+    period: per-second-billing
+    costPerUnit: 1.50
+    costCurrency: USD
+    notes: Base $0.50/hr + $1.00/hr premium = $1.50/hr total.
+  - scope: Transcription - Recall.ai Built-in
+    description: Built-in transcription billed per second based on difference between started_at and completed_at timestamps.
+    limit: null
+    unit: recording-hours
+    period: per-second-billing
+    costPerUnit: 0.15
+    costCurrency: USD
+  - scope: Storage
+    description: Recording media storage with 7-day free tier; extended storage billed per media hour per 30-day period.
+    limit: 7
+    unit: days-free
+    period: per-recording
+    costPerUnit: 0.05
+    costCurrency: USD
+    notes: $0.05 per media hour for each additional 30-day period after the free 7 days.
+  - scope: Regions
+    description: Recall.ai operates four independent regional deployments. API keys and resources are region-scoped.
+    regions:
+      - name: US East
+        baseURL: https://us-east-1.recall.ai
+        alias: https://api.recall.ai
+      - name: US West
+        baseURL: https://us-west-2.recall.ai
+      - name: EU Frankfurt
+        baseURL: https://eu-central-1.recall.ai
+      - name: Asia Tokyo
+        baseURL: https://ap-northeast-1.recall.ai

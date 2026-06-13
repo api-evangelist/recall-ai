@@ -1,0 +1,81 @@
+specificationVersion: "1.0"
+id: recall-ai-finops
+name: Recall.ai FinOps Framework
+description: >
+  FOCUS-aligned cost and usage model for Recall.ai meeting bot infrastructure. All costs are usage-based with no committed spend or platform fee on the Pay As You Go plan. Charges accrue per second of active bot time, transcription time, and extended media storage. Volume tiers are available on Launch and Enterprise plans.
+url: https://www.recall.ai/pricing
+framework: FOCUS 1.0
+billingModel: usage-based
+currency: USD
+commitmentOptions:
+  - type: PayAsYouGo
+    description: No commitment, no platform fee. Pay only for active usage billed per second.
+    minimumSpend: 0
+  - type: Launch
+    description: Volume-committed plan with discounted per-hour rates. Custom pricing negotiated with sales.
+    minimumSpend: custom
+  - type: Enterprise
+    description: Custom contract with SLAs, HIPAA BAA, SSO, and white-glove support.
+    minimumSpend: custom
+skus:
+  - id: recall-bot-standard
+    name: Meeting Bot - Standard
+    description: Standard meeting bot recording. Billed from joining_call event to terminal event, prorated to the nearest second.
+    unit: recording-hour
+    unitPrice: 0.50
+    currency: USD
+    billingPeriod: per-second
+    platform:
+      - Zoom
+      - Google Meet
+      - Microsoft Teams
+      - Webex
+      - Slack Huddles
+      - GoTo Meeting
+  - id: recall-bot-web-4core
+    name: Meeting Bot - Web 4-Core Premium
+    description: Premium 4-core web bot variant. Adds $0.10/hr to the standard recording rate.
+    unit: recording-hour
+    unitPrice: 0.10
+    currency: USD
+    billingPeriod: per-second
+    notes: Charged in addition to the standard recording rate.
+  - id: recall-bot-web-gpu
+    name: Meeting Bot - Web GPU Premium
+    description: GPU-accelerated web bot variant for high-compute workloads. Adds $1.00/hr to the standard recording rate.
+    unit: recording-hour
+    unitPrice: 1.00
+    currency: USD
+    billingPeriod: per-second
+    notes: Charged in addition to the standard recording rate.
+  - id: recall-transcription-builtin
+    name: Transcription - Recall.ai Built-in
+    description: Built-in AI transcription engine. Billed per second of transcription duration.
+    unit: recording-hour
+    unitPrice: 0.15
+    currency: USD
+    billingPeriod: per-second
+    notes: Third-party transcription providers (e.g. Deepgram, AssemblyAI) are billed directly by those providers.
+  - id: recall-storage-extended
+    name: Extended Media Storage
+    description: Storage for recording media beyond the 7-day free tier. Charged per media hour per 30-day rolling period.
+    unit: media-hour-per-30-days
+    unitPrice: 0.05
+    currency: USD
+    billingPeriod: per-30-days
+    freeAllowance: 7 days per recording
+  - id: recall-api-requests
+    name: API Requests
+    description: REST API calls to bot management, retrieval, and calendar endpoints. No additional charge.
+    unit: request
+    unitPrice: 0.00
+    currency: USD
+    notes: No rate-limit charges; no per-request fees.
+costOptimizationRecommendations:
+  - Use webhooks instead of polling the bot retrieval endpoint to avoid unnecessary API calls.
+  - Terminate bots promptly after meeting ends to avoid charges for idle waiting_room time.
+  - Use the standard bot variant unless GPU or 4-core resources are required; premium variants significantly increase costs.
+  - Use third-party transcription providers if they offer lower per-minute costs than the Recall.ai built-in at $0.15/hr.
+  - Monitor extended storage usage; retrieve and store recordings locally within the 7-day free window to avoid $0.05/media-hour/30-days charges.
+  - Negotiate a Launch plan volume discount once recording hours are predictable to reduce the $0.50/hr base rate.
+  - Choose the closest regional deployment to reduce latency and potential re-processing costs.

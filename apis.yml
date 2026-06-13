@@ -1,0 +1,72 @@
+aid: recall-ai
+name: Recall.ai
+description: >
+  Recall.ai provides meeting bot infrastructure through a REST API that enables developers to programmatically join Zoom, Microsoft Teams, Google Meet, Webex, Slack Huddles, and other video conferencing platforms. The API delivers real-time and asynchronous access to meeting recordings, AI-powered transcription, participant metadata, and structured meeting data. Developers can deploy bots that stream audio and video, trigger calendar-driven automations, and extract actionable insights from meetings at scale. Recall.ai supports multi-region deployments across US West, US East, EU, and Asia-Pacific, with per-second usage billing and no monthly platform fee.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/recall-ai/refs/heads/main/apis.yml
+created: "2026-06-12"
+modified: "2026-06-12"
+specificationVersion: "0.19"
+tags:
+  - Meeting Bots
+  - Recording
+  - Transcription
+  - Video Conferencing
+  - Zoom
+  - Google Meet
+  - Microsoft Teams
+  - Real-Time
+  - AI
+  - Infrastructure
+apis:
+  - name: Recall.ai REST API
+    description: >
+      The Recall.ai REST API provides programmatic access to meeting bot management, recording retrieval, transcript extraction, calendar integration, and real-time media streaming across Zoom, Google Meet, Microsoft Teams, Webex, and Slack Huddles.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.recall.ai/docs/getting-started
+    baseURL: https://us-east-1.recall.ai/api/v1
+    tags:
+      - Meeting Bots
+      - Recording
+      - Transcription
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://docs.recall.ai/docs/getting-started
+      - type: OpenAPI
+        url: https://docs.recall.ai/llms.txt
+      - type: Quickstart
+        url: https://docs.recall.ai/v1.10/docs/quickstart
+      - type: Regions
+        url: https://docs.recall.ai/docs/regions
+      - type: Authentication
+        url: https://docs.recall.ai/reference/authentication
+      - type: Webhooks
+        url: https://docs.recall.ai/docs/bot-status-change-events
+common:
+  - type: Website
+    url: https://www.recall.ai/
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GitHubOrg
+    url: https://github.com/recallai
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/recall-ai
+  - type: Blog
+    url: https://www.recall.ai/blog
+  - type: Pricing
+    url: https://www.recall.ai/pricing
+  - type: StatusPage
+    url: https://statusgator.com/services/recallai
+  - type: X
+    url: https://twitter.com/recall_ai
+  - type: Plans
+    url: plans/recall-ai-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/recall-ai-rate-limits.yml
+  - type: FinOps
+    url: finops/recall-ai-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
