@@ -67,6 +67,10 @@ common:
     url: rate-limits/recall-ai-rate-limits.yml
   - type: FinOps
     url: finops/recall-ai-finops.yml
+  - type: JSONLDContext
+    url: json-ld/recall-ai-context.jsonld
+  - type: BlogPosts
+    url: blogs/blogs.json
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

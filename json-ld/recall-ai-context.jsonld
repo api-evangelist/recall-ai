@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "recall": "https://www.recall.ai/vocab#",
+    "api": "https://pending.schema.org/WebAPI",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "provider": "provider",
+    "documentation": "https://schema.org/documentation",
+    "softwareVersion": "softwareVersion",
+    "termsOfService": "termsOfService",
+    "license": "license",
+    "Bot": {
+      "@id": "recall:Bot",
+      "@type": "schema:SoftwareApplication",
+      "description": "A meeting bot deployed by Recall.ai into a video conferencing session."
+    },
+    "botId": {
+      "@id": "recall:botId",
+      "@type": "@id"
+    },
+    "meetingUrl": {
+      "@id": "recall:meetingUrl",
+      "@type": "@id"
+    },
+    "platform": {
+      "@id": "recall:platform",
+      "description": "Video conferencing platform (zoom, google_meet, microsoft_teams, webex, slack_huddles)."
+    },
+    "Recording": {
+      "@id": "recall:Recording",
+      "@type": "schema:MediaObject",
+      "description": "A recorded video/audio artifact from a meeting session."
+    },
+    "recordingId": {
+      "@id": "recall:recordingId",
+      "@type": "@id"
+    },
+    "Transcript": {
+      "@id": "recall:Transcript",
+      "@type": "schema:DigitalDocument",
+      "description": "AI-generated transcript of a meeting recording."
+    },
+    "transcriptId": {
+      "@id": "recall:transcriptId",
+      "@type": "@id"
+    },
+    "speaker": {
+      "@id": "recall:speaker",
+      "@type": "schema:Person"
+    },
+    "CalendarIntegration": {
+      "@id": "recall:CalendarIntegration",
+      "@type": "schema:Service",
+      "description": "Calendar-driven automation for scheduling meeting bots."
+    },
+    "region": {
+      "@id": "recall:region",
+      "description": "Deployment region: us-west-2, us-east-1, eu-west-2, ap-southeast-1."
+    },
+    "Webhook": {
+      "@id": "recall:Webhook",
+      "@type": "schema:Action",
+      "description": "Event-driven webhook notification for bot lifecycle and recording status changes."
+    },
+    "webhookEvent": {
+      "@id": "recall:webhookEvent",
+      "description": "Type of webhook event, e.g. bot.status_change, recording.done, transcript.done."
+    },
+    "workspace": {
+      "@id": "recall:workspace",
+      "@type": "schema:Organization",
+      "description": "Recall.ai tenant workspace associated with an API key."
+    },
+    "apiKey": {
+      "@id": "recall:apiKey",
+      "description": "Bearer token used to authenticate requests to the Recall.ai REST API."
+    },
+    "realTimeMedia": {
+      "@id": "recall:realTimeMedia",
+      "@type": "schema:MediaObject",
+      "description": "Live audio/video stream delivered by a meeting bot during an active session."
+    }
+  },
+  "@type": "WebAPI",
+  "name": "Recall.ai REST API",
+  "description": "Meeting bot infrastructure API enabling programmatic join, recording, transcription, and real-time media streaming across Zoom, Google Meet, Microsoft Teams, Webex, and Slack Huddles.",
+  "url": "https://us-east-1.recall.ai/api/v1",
+  "provider": {
+    "@type": "Organization",
+    "name": "Recall.ai",
+    "url": "https://www.recall.ai/"
+  },
+  "documentation": "https://docs.recall.ai/docs/getting-started",
+  "termsOfService": "https://www.recall.ai/terms",
+  "softwareVersion": "v1"
+}

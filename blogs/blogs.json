@@ -1,0 +1,10 @@
+{
+  "name": "Recall.ai Blog",
+  "description": "Blog posts from Recall.ai covering meeting bot infrastructure, AI transcription, real-time media, and developer use cases.",
+  "url": "https://www.recall.ai/blog",
+  "rssUrl": null,
+  "rssAvailable": false,
+  "note": "No RSS/Atom feed detected on https://www.recall.ai/blog as of 2026-06-12. The blog is served via Webflow with no discoverable feed endpoint.",
+  "lastChecked": "2026-06-12",
+  "posts": []
+}
