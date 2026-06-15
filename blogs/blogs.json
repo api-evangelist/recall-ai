@@ -6,5 +6,17 @@
   "rssAvailable": false,
   "note": "No RSS/Atom feed detected on https://www.recall.ai/blog as of 2026-06-12. The blog is served via Webflow with no discoverable feed endpoint.",
   "lastChecked": "2026-06-12",
-  "posts": []
+  "posts": [],
+  "repo": "recall-ai",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/recall-ai",
+      "feed_url": "https://www.linkedin.com/company/recall-ai",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
