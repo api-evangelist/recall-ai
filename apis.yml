@@ -36,7 +36,7 @@ apis:
         url: https://docs.recall.ai/docs/getting-started
       - type: OpenAPI
         url: https://docs.recall.ai/llms.txt
-      - type: Quickstart
+      - type: GettingStarted
         url: https://docs.recall.ai/v1.10/docs/quickstart
       - type: Regions
         url: https://docs.recall.ai/docs/regions
