@@ -45,6 +45,8 @@ apis:
       - type: Webhooks
         url: https://docs.recall.ai/docs/bot-status-change-events
 common:
+  - type: DomainSecurity
+    url: security/recall-ai-domain-security.yml
   - type: Website
     url: https://www.recall.ai/
   - type: Documentation
