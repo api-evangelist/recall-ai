@@ -29,6 +29,17 @@ tags:
   - Google Meet
   - Microsoft Teams
   - Real-Time
+  - Artificial Intelligence
+  - Infrastructure
+tags_raw:
+  - Meeting Bots
+  - Recording
+  - Transcription
+  - Video Conferencing
+  - Zoom
+  - Google Meet
+  - Microsoft Teams
+  - Real-Time
   - AI
   - Infrastructure
 apis:
@@ -39,6 +50,11 @@ apis:
     humanURL: https://docs.recall.ai/docs/getting-started
     baseURL: https://us-east-1.recall.ai/api/v1
     tags:
+      - Meeting Bots
+      - Recording
+      - Transcription
+      - Webhook
+    tags_raw:
       - Meeting Bots
       - Recording
       - Transcription
