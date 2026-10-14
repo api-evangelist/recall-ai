@@ -1,0 +1,47 @@
+generated: '2026-10-14'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/recall-ai-api-openapi.yml
+format: custom
+envelope:
+  media_type: application/json
+  schema: CalendarAccountAccessTokenError
+coverage:
+  operations: 111
+  statuses_declared: 5
+problems:
+- status: 400
+  title: Bad Request
+  description: No response body
+  operations: 12
+  media_types:
+  - application/json
+  schema: CalendarAccountAccessTokenError
+- status: 404
+  title: Not Found
+  description: No response body
+  operations: 2
+  media_types: []
+  schema: null
+- status: 405
+  title: Method Not Allowed
+  description: null
+  operations: 1
+  media_types:
+  - application/json
+  schema: null
+- status: 409
+  title: Conflict
+  description: null
+  operations: 1
+  media_types:
+  - application/json
+  schema: null
+- status: 507
+  title: Insufficient Storage
+  description: null
+  operations: 1
+  media_types:
+  - application/json
+  schema: null

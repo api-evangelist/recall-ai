@@ -1,0 +1,422 @@
+generated: '2026-10-14'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/recall-ai-api-openapi.yml
+vocabulary:
+  name: Recall.ai Domain Vocabulary
+  description: 'Terms declared by Recall.ai''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-14'
+  terms:
+  - term: PaginatedZoomMeetingToCredentialList
+    definition: 'Object declared by the contract with fields: next, previous, results.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/PaginatedZoomMeetingToCredentialList
+  - term: ZoomMeetingToCredential
+    definition: 'Object declared by the contract with fields: meeting_id, credential, synced_at.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ZoomMeetingToCredential
+  - term: ArtifactStatus
+    definition: 'Object declared by the contract with fields: code, sub_code, updated_at.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ArtifactStatus
+  - term: ArtifactStatusCodeEnum
+    definition: '* `processing` - Processing * `done` - Done * `failed` - Failed * `deleted` - Deleted'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ArtifactStatusCodeEnum
+  - term: AudioMixedArtifactData
+    definition: 'Object declared by the contract with fields: download_url.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioMixedArtifactData
+  - term: AudioMixedArtifactShortcut
+    definition: 'Object declared by the contract with fields: id, created_at, status, metadata, data, format.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioMixedArtifactShortcut
+  - term: AudioOutput
+    definition: 'Object declared by the contract with fields: data, replay_on_participant_join.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioOutput
+  - term: AudioOutputData
+    definition: 'Object declared by the contract with fields: kind.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioOutputData
+  - term: AudioOutputDataKindEnum
+    definition: '* `mp3` - mp3'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioOutputDataKindEnum
+  - term: AudioOutputReplay
+    definition: 'Object declared by the contract with fields: debounce_mode, debounce_interval, disable_after.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AudioOutputReplay
+  - term: AutomaticAudioOutput
+    definition: 'Object declared by the contract with fields: in_call_recording.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticAudioOutput
+  - term: AutomaticLeave
+    definition: 'Object declared by the contract with fields: waiting_room_timeout, noone_joined_timeout, everyone_left_timeout, in_call_not_recording_timeout,
+      in_call_recording_timeout, recording_permission_denied_timeout, silence_detection, bot_detection.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeave
+  - term: AutomaticLeaveBotDetection
+    definition: 'Object declared by the contract with fields: using_participant_events, using_participant_names.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeaveBotDetection
+  - term: AutomaticLeaveBotDetectionUsingParticipantEvents
+    definition: 'Object declared by the contract with fields: timeout, activate_after.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeaveBotDetectionUsingParticipantEvents
+  - term: AutomaticLeaveBotDetectionUsingParticipantNames
+    definition: 'Object declared by the contract with fields: timeout, activate_after, matches.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeaveBotDetectionUsingParticipantNames
+  - term: AutomaticLeaveEveryoneLeft
+    definition: 'Object declared by the contract with fields: timeout, activate_after.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeaveEveryoneLeft
+  - term: AutomaticLeaveSilenceDetection
+    definition: 'Object declared by the contract with fields: timeout, activate_after.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticLeaveSilenceDetection
+  - term: AutomaticVideoOutput
+    definition: 'Object declared by the contract with fields: in_call_recording, in_call_not_recording.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/AutomaticVideoOutput
+  - term: BotCalendarMeeting
+    definition: 'Object declared by the contract with fields: id, start_time, end_time, calendar_user.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotCalendarMeeting
+  - term: BotCalendarUser
+    definition: 'Object declared by the contract with fields: id, external_id.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotCalendarUser
+  - term: BotEvent
+    definition: 'Object declared by the contract with fields: code, message, created_at, sub_code.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotEvent
+  - term: BotGet
+    definition: 'Object declared by the contract with fields: id, meeting_url, bot_name, join_at, recording_config, status_changes, recordings,
+      output_media, automatic_video_output, automatic_audio_output, chat, automatic_leave. (8 more)'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotGet
+  - term: BotIncludeInRecording
+    definition: 'Object declared by the contract with fields: audio.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotIncludeInRecording
+  - term: BotRecordingConfig
+    definition: 'Object declared by the contract with fields: transcript, realtime_endpoints, retention, video_mixed_layout, video_mixed_mp4,
+      participant_events, meeting_metadata, video_mixed_participant_video_when_screenshare, start_recording_on, include_bot_in_recording, metadata,
+      audio_mixed_raw. (7 more)'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfig
+  - term: BotRecordingConfigBaseArtifact
+    definition: 'Object declared by the contract with fields: metadata.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigBaseArtifact
+  - term: BotRecordingConfigRealtimeEndpointDesktopSdkCallback
+    definition: 'Object declared by the contract with fields: events.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointDesktopSdkCallback
+  - term: BotRecordingConfigRealtimeEndpointRtmp
+    definition: 'Object declared by the contract with fields: url, events.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointRtmp
+  - term: BotRecordingConfigRealtimeEndpointShared
+    definition: 'Object declared by the contract with fields: metadata, type.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointShared
+  - term: BotRecordingConfigRealtimeEndpointSharedTypeEnum
+    definition: '* `rtmp` - Rtmp * `websocket` - Websocket * `webhook` - Webhook * `desktop_sdk_callback` - Desktop Sdk Callback'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointSharedTypeEnum
+  - term: BotRecordingConfigRealtimeEndpointWebhook
+    definition: 'Object declared by the contract with fields: url, events.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointWebhook
+  - term: BotRecordingConfigRealtimeEndpointWebsocket
+    definition: 'Object declared by the contract with fields: url, events.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRealtimeEndpointWebsocket
+  - term: BotRecordingConfigRetention
+    definition: 'Object declared by the contract with fields: type, hours.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRetention
+  - term: BotRecordingConfigRetentionSharedTypeEnum
+    definition: '* `timed` - Timed * `forever` - Forever'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigRetentionSharedTypeEnum
+  - term: BotRecordingConfigTranscriptArtifact
+    definition: 'Object declared by the contract with fields: metadata, provider, diarization.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigTranscriptArtifact
+  - term: BotRecordingConfigTranscriptDiarization
+    definition: 'Object declared by the contract with fields: use_separate_streams_when_available.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigTranscriptDiarization
+  - term: BotRecordingConfigTranscriptProvider
+    definition: 'Object declared by the contract with fields: recallai_streaming, assembly_ai_async_chunked, assembly_ai_v3_streaming, deepgram_streaming,
+      gladia_v2_streaming, rev_streaming, aws_transcribe_streaming, speechmatics_streaming, elevenlabs_streaming, meeting_captions.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingConfigTranscriptProvider
+  - term: BotRecordingEmbed
+    definition: 'Object declared by the contract with fields: id, created_at, started_at, completed_at, expires_at, status, media_shortcuts, metadata.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotRecordingEmbed
+  - term: BotVariant
+    definition: 'Object declared by the contract with fields: zoom, google_meet, microsoft_teams, webex.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/BotVariant
+  - term: Chat
+    definition: 'Object declared by the contract with fields: on_bot_join, on_participant_join.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/Chat
+  - term: ChatOnBotJoin
+    definition: 'Object declared by the contract with fields: send_to, message, pin.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ChatOnBotJoin
+  - term: ChatOnParticipantJoin
+    definition: 'Object declared by the contract with fields: message, exclude_host.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ChatOnParticipantJoin
+  - term: DebounceModeEnum
+    definition: '* `leading` - leading * `trailing` - trailing'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/DebounceModeEnum
+  - term: Format33bEnum
+    definition: '* `mp3` - Mp3 * `raw` - Raw'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/Format33bEnum
+  - term: Format3b3Enum
+    definition: '* `mp4` - Mp4'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/Format3b3Enum
+  - term: GmeetMeetingInviteMeetingLink
+    definition: 'Object declared by the contract with fields: platform, meeting_id.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GmeetMeetingInviteMeetingLink
+  - term: GmeetMeetingInviteMeetingLinkPlatformEnum
+    definition: '* `google_meet` - google_meet'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GmeetMeetingInviteMeetingLinkPlatformEnum
+  - term: GoogleMeet
+    definition: 'Object declared by the contract with fields: google_login_group_id.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GoogleMeet
+  - term: GoogleMeetEnum
+    definition: '* `web` - web * `web_4_core` - web_4_core * `web_gpu` - web_gpu'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GoogleMeetEnum
+  - term: GotoMeetingInviteMeetingLink
+    definition: 'Object declared by the contract with fields: platform, meeting_id.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GotoMeetingInviteMeetingLink
+  - term: GotoMeetingInviteMeetingLinkPlatformEnum
+    definition: '* `goto_meeting` - goto_meeting'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/GotoMeetingInviteMeetingLinkPlatformEnum
+  - term: LanguageCodeC40Enum
+    definition: '* `auto` - auto * `bg` - bg * `ca` - ca * `cs` - cs * `da` - da * `de` - de * `el` - el * `en` - en * `en_au` - en_au * `en_uk`
+      - en_uk * `en_us` - en_us * `es` - es * `et` - et * `fi` - fi * `fr` - fr * `he` - he * `hi` - hi * `hr` - hr * `hu` - hu * `id` - id *
+      `it` - it * `ja` - ja * `ko` - ko * `lt` - lt * `lv` - lv * `ms` - ms * `nl` - nl * `no` - no * `pl` - pl * `pt` - pt * `ro` - ro * `ru`'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/LanguageCodeC40Enum
+  - term: MeetingCaptions
+    definition: 'Object declared by the contract with fields: language_code.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MeetingCaptions
+  - term: MeetingCaptionsLanguageCodeEnum
+    definition: '* `cs` - Czech * `de` - German * `en` - English * `es` - Spanish * `fil` - Filipino * `fr` - French * `he` - Hebrew * `hi` -
+      Hindi * `it` - Italian * `ja` - Japanese * `ko` - Korean * `nl` - Dutch * `pl` - Polish * `pt` - Portuguese * `pt-BR` - Portuguese (Brazil)
+      * `ro` - Romanian * `ru` - Russian * `sv` - Swedish * `th` - Thai * `tr` - Turkish * `uk` - Ukrainian * `vi` - Vietnamese * `zh` - Chin'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MeetingCaptionsLanguageCodeEnum
+  - term: MeetingMetadataArtifactData
+    definition: 'Object declared by the contract with fields: title, zoom.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MeetingMetadataArtifactData
+  - term: MeetingMetadataArtifactDataZoom
+    definition: 'Object declared by the contract with fields: meeting_uuid.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MeetingMetadataArtifactDataZoom
+  - term: MeetingMetadataArtifactShortcut
+    definition: 'Object declared by the contract with fields: id, created_at, status, metadata, data.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MeetingMetadataArtifactShortcut
+  - term: MicrosoftTeamsEnum
+    definition: '* `web` - web * `web_4_core` - web_4_core * `web_gpu` - web_gpu'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/MicrosoftTeamsEnum
+  - term: OutputMedia
+    definition: 'Object declared by the contract with fields: camera, screenshare.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/OutputMedia
+  - term: OutputMediaWebpage
+    definition: 'Object declared by the contract with fields: kind, config.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/OutputMediaWebpage
+  - term: OutputMediaWebpageConfig
+    definition: 'Object declared by the contract with fields: url.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/OutputMediaWebpageConfig
+  - term: OutputMediaWebpageKindEnum
+    definition: '* `webpage` - webpage'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/OutputMediaWebpageKindEnum
+  - term: PaginatedBotGetList
+    definition: 'Object declared by the contract with fields: count, next, previous, results.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/PaginatedBotGetList
+  - term: ParticipantEventsArtifactData
+    definition: 'Object declared by the contract with fields: participant_events_download_url, speaker_timeline_download_url, participants_download_url.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ParticipantEventsArtifactData
+  - term: ParticipantEventsArtifactShortcut
+    definition: 'Object declared by the contract with fields: id, created_at, status, metadata, data.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/ParticipantEventsArtifactShortcut
+  - term: RecallaiSpellingEntry
+    definition: 'Object declared by the contract with fields: find, replace.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecallaiSpellingEntry
+  - term: RecallaiStreamingTranscription
+    definition: 'Object declared by the contract with fields: language_code, spelling, key_terms, filter_profanity, mode.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecallaiStreamingTranscription
+  - term: RecallaiStreamingTranscriptionModeEnum
+    definition: '* `prioritize_low_latency` - prioritize_low_latency * `prioritize_accuracy` - prioritize_accuracy'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecallaiStreamingTranscriptionModeEnum
+  - term: RecordingShortcuts
+    definition: 'Object declared by the contract with fields: video_mixed, transcript, participant_events, meeting_metadata, audio_mixed.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecordingShortcuts
+  - term: RecordingStatus
+    definition: 'Object declared by the contract with fields: code, sub_code, updated_at.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecordingStatus
+  - term: RecordingStatusCodeEnum
+    definition: '* `processing` - Processing * `paused` - Paused * `done` - Done * `failed` - Failed * `deleted` - Deleted'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/RecordingStatusCodeEnum
+  - term: SendToEnum
+    definition: '* `host` - host * `everyone` - everyone * `everyone_except_host` - everyone_except_host'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/SendToEnum
+  - term: SlackTeamIntegrationMinimal
+    definition: 'Object declared by the contract with fields: id, metadata.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/SlackTeamIntegrationMinimal
+  - term: StartRecordingOnEnum
+    definition: '* `call_join` - call_join * `participant_join` - participant_join * `participant_speak` - participant_speak'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/StartRecordingOnEnum
+  - term: TeamsLiveMeetingInviteMeetingLink
+    definition: 'Object declared by the contract with fields: platform, meeting_id, meeting_password.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TeamsLiveMeetingInviteMeetingLink
+  - term: TeamsLiveMeetingInviteMeetingLinkPlatformEnum
+    definition: '* `microsoft_teams_live` - microsoft_teams_live'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TeamsLiveMeetingInviteMeetingLinkPlatformEnum
+  - term: TeamsMeetingInviteMeetingLink
+    definition: 'Object declared by the contract with fields: platform, meeting_id, meeting_password, organizer_id, tenant_id, message_id, thread_id,
+      business_meeting_id, business_meeting_password.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TeamsMeetingInviteMeetingLink
+  - term: TeamsMeetingInviteMeetingLinkPlatformEnum
+    definition: '* `microsoft_teams` - microsoft_teams'
+    tags:
+    - Enumeration
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TeamsMeetingInviteMeetingLinkPlatformEnum
+  - term: TranscriptArtifactData
+    definition: 'Object declared by the contract with fields: download_url, provider_data_download_url.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TranscriptArtifactData
+  - term: TranscriptArtifactDiarization
+    definition: 'Object declared by the contract with fields: use_separate_streams_when_available.'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TranscriptArtifactDiarization
+  - term: TranscriptArtifactProvider
+    definition: 'Object declared by the contract with fields: assembly_ai_async, deepgram_async, gladia_v2_async, rev_async, speechmatics_async,
+      recallai_async, google_speech_v2_async, aws_transcribe_async, elevenlabs_async, assembly_ai_async_chunked, assembly_ai_v3_streaming, recallai_streaming.
+      (8 more)'
+    tags:
+    - Object
+    source: openapi/recall-ai-api-openapi.yml#/components/schemas/TranscriptArtifactProvider

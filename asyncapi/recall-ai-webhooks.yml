@@ -1,0 +1,17 @@
+generated: '2026-10-14'
+method: derived
+generator: derive-webhooks.py
+source:
+- openapi/recall-ai-api-openapi.yml
+description: 'Event surface derived from the provider''s own OpenAPI: enum vad_events. No AsyncAPI document is published by the provider; this
+  catalog lists the events the contract names.'
+management_operations: []
+events:
+- event: 'true'
+  declared_in: components/schemas/BotRecordingConfigTranscriptProvider/properties/deepgram_streaming/properties/vad_events
+- event: 'false'
+  declared_in: components/schemas/BotRecordingConfigTranscriptProvider/properties/deepgram_streaming/properties/vad_events
+- event: 'True'
+  declared_in: components/schemas/BotRecordingConfigTranscriptProvider/properties/deepgram_streaming/properties/vad_events
+- event: 'False'
+  declared_in: components/schemas/BotRecordingConfigTranscriptProvider/properties/deepgram_streaming/properties/vad_events

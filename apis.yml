@@ -1,8 +1,17 @@
 aid: recall-ai
+
 name: Recall.ai
-description: >
-  Recall.ai provides meeting bot infrastructure through a REST API that enables developers to programmatically join Zoom, Microsoft Teams, Google Meet, Webex, Slack Huddles, and other video conferencing platforms. The API delivers real-time and asynchronous access to meeting recordings, AI-powered transcription, participant metadata, and structured meeting data. Developers can deploy bots that stream audio and video, trigger calendar-driven automations, and extract actionable insights from meetings at scale. Recall.ai supports multi-region deployments across US West, US East, EU, and Asia-Pacific, with per-second usage billing and no monthly platform fee.
+
+description: 'Recall.ai provides meeting bot infrastructure through a REST API that enables developers to programmatically join Zoom, Microsoft
+  Teams, Google Meet, Webex, Slack Huddles, and other video conferencing platforms. The API delivers real-time and asynchronous access to meeting
+  recordings, AI-powered transcription, participant metadata, and structured meeting data. Developers can deploy bots that stream audio and video,
+  trigger calendar-driven automations, and extract actionable insights from meetings at scale. Recall.ai supports multi-region deployments across
+  US West, US East, EU, and Asia-Pacific, with per-second usage billing and no monthly platform fee.
+
+  '
+
 type: Index
+
 deliveryModel:
   model: saas
   open_source: false
@@ -14,6 +23,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: paid
   onboarding: unknown
@@ -26,92 +36,153 @@ accessModel:
   - plans
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/recall-ai.png
+
 url: https://raw.githubusercontent.com/api-evangelist/recall-ai/refs/heads/main/apis.yml
-created: "2026-06-12"
-modified: "2026-06-12"
+
+created: '2026-06-12'
+
+modified: '2026-06-12'
+
 specificationVersion: '0.23'
+
 tags:
-  - Meeting Bots
-  - Recording
-  - Transcription
-  - Video Conferencing
-  - Zoom
-  - Google Meet
-  - Microsoft Teams
-  - Real-Time
-  - Artificial Intelligence
-  - Infrastructure
+- Meeting Bots
+- Recording
+- Transcription
+- Video Conferencing
+- Zoom
+- Google Meet
+- Microsoft Teams
+- Real-Time
+- Artificial Intelligence
+- Infrastructure
+
 tags_raw:
-  - Meeting Bots
-  - Recording
-  - Transcription
-  - Video Conferencing
-  - Zoom
-  - Google Meet
-  - Microsoft Teams
-  - Real-Time
-  - AI
-  - Infrastructure
-apis:
-  - name: Recall.ai REST API
-    description: >
-      The Recall.ai REST API provides programmatic access to meeting bot management, recording retrieval, transcript extraction, calendar integration, and real-time media streaming across Zoom, Google Meet, Microsoft Teams, Webex, and Slack Huddles.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://docs.recall.ai/docs/getting-started
-    baseURL: https://us-east-1.recall.ai/api/v1
-    tags:
-      - Meeting Bots
-      - Recording
-      - Transcription
-      - Webhook
-    tags_raw:
-      - Meeting Bots
-      - Recording
-      - Transcription
-      - Webhooks
-    properties:
-      - type: Documentation
-        url: https://docs.recall.ai/docs/getting-started
-      - type: OpenAPI
-        url: https://docs.recall.ai/llms.txt
-      - type: GettingStarted
-        url: https://docs.recall.ai/v1.10/docs/quickstart
-      - type: Regions
-        url: https://docs.recall.ai/docs/regions
-      - type: Authentication
-        url: https://docs.recall.ai/reference/authentication
-      - type: Webhooks
-        url: https://docs.recall.ai/docs/bot-status-change-events
+- Meeting Bots
+- Recording
+- Transcription
+- Video Conferencing
+- Zoom
+- Google Meet
+- Microsoft Teams
+- Real-Time
+- AI
+- Infrastructure
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
-  - type: DomainSecurity
-    url: security/recall-ai-domain-security.yml
-  - type: Website
-    url: https://www.recall.ai/
+- type: AgenticAccess
+  url: agentic-access/recall-ai-agentic-access.yml
+- type: Spectral
+  url: rules/recall-ai-rules.yml
+- type: JSONLD
+  url: json-ld/recall-ai-context.jsonld
+- type: Vocabulary
+  url: vocabulary/recall-ai-vocabulary.yml
+- type: Webhooks
+  url: asyncapi/recall-ai-webhooks.yml
+- type: DataModel
+  url: data-model/recall-ai-data-model.yml
+- type: Idempotency
+  url: conventions/recall-ai-conventions.yml
+- type: Conventions
+  url: conventions/recall-ai-conventions.yml
+- type: ErrorCatalog
+  url: errors/recall-ai-problem-types.yml
+- type: Conformance
+  url: conformance/recall-ai-conformance.yml
+- type: LLMsTxt
+  url: llms/recall-ai-llms.txt
+- type: MCPServer
+  url: mcp/recall-ai-mcp.yml
+- type: WellKnown
+  url: well-known/recall-ai-well-known.yml
+- type: Hosts
+  url: hosts/recall-ai-hosts.yml
+- type: Vendors
+  url: vendors/recall-ai-vendors.yml
+- type: SDKs
+  url: packages/recall-ai-packages.yml
+- type: Packages
+  url: packages/recall-ai-packages.yml
+- type: TermsOfService
+  url: https://www.recall.ai/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.recall.ai/privacy
+- type: Login
+  url: https://www.recall.ai/login
+- type: Authentication
+  url: authentication/recall-ai-authentication.yml
+- type: DomainSecurity
+  url: security/recall-ai-domain-security.yml
+- type: Website
+  url: https://www.recall.ai/
+- type: Documentation
+  url: https://docs.recall.ai/docs/getting-started
+- type: GitHubOrg
+  url: https://github.com/recallai
+- type: LinkedIn
+  url: https://www.linkedin.com/company/recall-ai
+- type: Blog
+  url: https://www.recall.ai/blog
+- type: Pricing
+  url: https://www.recall.ai/pricing
+- type: StatusPage
+  url: https://statusgator.com/services/recallai
+- type: X
+  url: https://twitter.com/recall_ai
+- type: Plans
+  url: plans/recall-ai-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/recall-ai-rate-limits.yml
+- type: FinOps
+  url: finops/recall-ai-finops.yml
+- type: JSONLDContext
+  url: json-ld/recall-ai-context.jsonld
+- type: BlogPosts
+  url: blogs/blogs.json
+
+apis:
+- aid: recall-ai:recall-ai-api
+  name: Recall.ai AI API
+  description: The Ai API from Recall.ai — 65 operation(s) for ai.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - Ai
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-api-openapi.yml
   - type: Documentation
     url: https://docs.recall.ai/docs/getting-started
-  - type: GitHubOrg
-    url: https://github.com/recallai
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/recall-ai
-  - type: Blog
-    url: https://www.recall.ai/blog
-  - type: Pricing
-    url: https://www.recall.ai/pricing
-  - type: StatusPage
-    url: https://statusgator.com/services/recallai
-  - type: X
-    url: https://twitter.com/recall_ai
-  - type: Plans
-    url: plans/recall-ai-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/recall-ai-rate-limits.yml
-  - type: FinOps
-    url: finops/recall-ai-finops.yml
-  - type: JSONLDContext
-    url: json-ld/recall-ai-context.jsonld
-  - type: BlogPosts
-    url: blogs/blogs.json
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+
+x-readme-harvest:
+  date: '2026-10-14'
+  ops: 111
+  tool: harvest-readme-openapi.py
+  portal: https://docs.recall.ai

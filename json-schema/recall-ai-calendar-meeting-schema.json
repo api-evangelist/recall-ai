@@ -1,0 +1,341 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/recall-ai/main/json-schema/recall-ai-calendar-meeting-schema.json",
+  "title": "CalendarMeeting",
+  "x-generated": "2026-10-14",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/recall-ai-api-openapi.yml#/components/schemas/CalendarMeeting",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "readOnly": true
+    },
+    "override_should_record": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "readOnly": true
+    },
+    "description": {
+      "type": "string",
+      "readOnly": true
+    },
+    "will_record": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "will_record_reason": {
+      "type": "string",
+      "readOnly": true
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "platform": {
+      "type": "string",
+      "readOnly": true
+    },
+    "platform_id": {
+      "type": "string",
+      "readOnly": true
+    },
+    "meeting_platform": {
+      "type": "string",
+      "readOnly": true
+    },
+    "calendar_platform": {
+      "type": "string",
+      "readOnly": true
+    },
+    "zoom_invite": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/ZoomMeetingInvite"
+        }
+      ],
+      "readOnly": true
+    },
+    "teams_invite": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/TeamsMeetingInvite"
+        }
+      ],
+      "readOnly": true
+    },
+    "meet_invite": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/GmeetMeetingInvite"
+        }
+      ],
+      "readOnly": true
+    },
+    "webex_invite": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/WebexInvite"
+        }
+      ],
+      "readOnly": true
+    },
+    "goto_meeting_invite": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/GotoMeetingInvite"
+        }
+      ],
+      "readOnly": true
+    },
+    "bot_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid",
+      "readOnly": true
+    },
+    "is_external": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "is_hosted_by_me": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "is_recurring": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "organizer_email": {
+      "type": "string",
+      "readOnly": true
+    },
+    "attendee_emails": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "readOnly": true
+    },
+    "attendees": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/MeetingAttendee"
+      },
+      "readOnly": true
+    },
+    "ical_uid": {
+      "type": "string",
+      "readOnly": true
+    },
+    "visibility": {
+      "type": "string",
+      "readOnly": true,
+      "description": "\n            For Google calendar meetings('default' | 'public' | 'private' | 'confidential').\n            For Microsoft Outlook('normal' | 'personal' | 'private' | 'confidential').\n            Additionally, this field may contain 'null' value.\n        "
+    }
+  },
+  "required": [
+    "attendee_emails",
+    "attendees",
+    "bot_id",
+    "calendar_platform",
+    "description",
+    "end_time",
+    "goto_meeting_invite",
+    "ical_uid",
+    "id",
+    "is_external",
+    "is_hosted_by_me",
+    "is_recurring",
+    "meet_invite",
+    "meeting_platform",
+    "organizer_email",
+    "platform",
+    "platform_id",
+    "start_time",
+    "teams_invite",
+    "title",
+    "visibility",
+    "webex_invite",
+    "will_record",
+    "will_record_reason",
+    "zoom_invite"
+  ],
+  "$defs": {
+    "GmeetMeetingInvite": {
+      "type": "object",
+      "properties": {
+        "meeting_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "meeting_id"
+      ]
+    },
+    "GotoMeetingInvite": {
+      "type": "object",
+      "properties": {
+        "meeting_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "meeting_id"
+      ]
+    },
+    "MeetingAttendee": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "is_organizer": {
+          "type": "boolean"
+        },
+        "status": {
+          "$ref": "#/$defs/MeetingAttendeeStatusEnum"
+        }
+      },
+      "required": [
+        "email",
+        "is_organizer",
+        "name",
+        "status"
+      ]
+    },
+    "MeetingAttendeeStatusEnum": {
+      "enum": [
+        "accepted",
+        "declined",
+        "tentative",
+        "not_available"
+      ],
+      "type": "string",
+      "description": "* `accepted` - accepted\n* `declined` - declined\n* `tentative` - tentative\n* `not_available` - not_available"
+    },
+    "TeamsMeetingInvite": {
+      "type": "object",
+      "properties": {
+        "meeting_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "meeting_password": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "organizer_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tenant_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "message_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thread_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "business_meeting_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "business_meeting_password": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "WebexInvite": {
+      "type": "object",
+      "properties": {
+        "meeting_subdomain": {
+          "type": "string"
+        },
+        "meeting_path": {
+          "type": "string",
+          "description": "This value is available only for Scheduled Webex meetings."
+        },
+        "meeting_mtid": {
+          "type": "string",
+          "description": "This value is available only for Scheduled Webex meetings."
+        },
+        "meeting_personal_room_id": {
+          "type": "string",
+          "description": "This value is available only for Personal room Webex meetings."
+        }
+      },
+      "required": [
+        "meeting_subdomain"
+      ]
+    },
+    "ZoomMeetingInvite": {
+      "type": "object",
+      "properties": {
+        "meeting_id": {
+          "type": "string"
+        },
+        "meeting_password": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tk": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zak": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "meeting_id"
+      ]
+    }
+  }
+}

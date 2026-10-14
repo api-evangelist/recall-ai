@@ -1,0 +1,22 @@
+generated: '2026-10-14'
+method: derived
+source: openapi/recall-ai-api-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: tokenAuth
+  type: apiKey
+  in: header
+  parameter: Authorization
+  description: Token-based authentication with required prefix "Token"
+  sources:
+  - openapi/recall-ai-api-openapi.yml
+- name: CalendarJwtAuthentication
+  type: apiKey
+  in: header
+  parameter: x-recallcalendarauthtoken
+  sources:
+  - openapi/recall-ai-api-openapi.yml
