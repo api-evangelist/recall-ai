@@ -1,0 +1,197 @@
+openapi: 3.2.0
+info:
+  title: Recall.ai Billing API
+  version: 0.0.0
+  description: Recall.ai API Documentation
+servers:
+- url: https://us-east-1.recall.ai
+  description: Recall.ai API
+- url: https://eu-central-1.recall.ai
+  description: European Recall.ai API
+- url: https://ap-northeast-1.recall.ai
+  description: Asia Recall.ai API
+- url: https://us-west-2.recall.ai
+  description: Pay-as-you-go Recall.ai API
+tags:
+- name: Billing
+paths:
+  /api/v1/billing/usage/:
+    get:
+      operationId: billing_usage_retrieve
+      description: 'Get bot usage statistics
+
+
+        The base rate limit for this endpoint is:
+
+        - 5 requests per min per workspace'
+      summary: Get Usage
+      parameters:
+      - in: query
+        name: end
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: start
+        schema:
+          type: string
+          format: date-time
+      tags:
+      - Billing
+      security:
+      - tokenAuth: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsageResponse'
+          description: ''
+      x-throttles:
+      - scope_key: workspace_id
+        limit: 5
+        period: min
+components:
+  schemas:
+    UsageResponse:
+      type: object
+      description: Serializer for usage statistics response.
+      properties:
+        bot_total:
+          type: number
+          format: double
+          description: The total amount of time, in seconds, of bots used.
+      required:
+      - bot_total
+  securitySchemes:
+    tokenAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: Token-based authentication with required prefix "Token"
+    CalendarJwtAuthentication:
+      type: apiKey
+      in: header
+      name: x-recallcalendarauthtoken
+x-provenance:
+  method: searched
+  source: https://docs.recall.ai/reference
+  harvested: '2026-10-14'
+  tool: harvest-readme-openapi.py
+  note: Assembled verbatim from the OpenAPI definition ReadMe embeds in each operation page of the provider's developer portal; paths and components merged by API title, nothing authored.
+  assembled_from:
+  - https://docs.recall.ai/reference/audio_mixed_destroy.md
+  - https://docs.recall.ai/reference/audio_mixed_list.md
+  - https://docs.recall.ai/reference/audio_mixed_partial_update.md
+  - https://docs.recall.ai/reference/audio_mixed_retrieve.md
+  - https://docs.recall.ai/reference/audio_separate_destroy.md
+  - https://docs.recall.ai/reference/audio_separate_list.md
+  - https://docs.recall.ai/reference/audio_separate_partial_update.md
+  - https://docs.recall.ai/reference/audio_separate_retrieve.md
+  - https://docs.recall.ai/reference/billing_usage_retrieve.md
+  - https://docs.recall.ai/reference/bot_create.md
+  - https://docs.recall.ai/reference/bot_delete_media_create.md
+  - https://docs.recall.ai/reference/bot_destroy.md
+  - https://docs.recall.ai/reference/bot_leave_call_create.md
+  - https://docs.recall.ai/reference/bot_list.md
+  - https://docs.recall.ai/reference/bot_output_audio_create.md
+  - https://docs.recall.ai/reference/bot_output_audio_destroy.md
+  - https://docs.recall.ai/reference/bot_output_media_create.md
+  - https://docs.recall.ai/reference/bot_output_media_destroy.md
+  - https://docs.recall.ai/reference/bot_output_screenshare_create.md
+  - https://docs.recall.ai/reference/bot_output_screenshare_destroy.md
+  - https://docs.recall.ai/reference/bot_output_video_create.md
+  - https://docs.recall.ai/reference/bot_output_video_destroy.md
+  - https://docs.recall.ai/reference/bot_partial_update.md
+  - https://docs.recall.ai/reference/bot_pause_recording_create.md
+  - https://docs.recall.ai/reference/bot_pin_participant_create.md
+  - https://docs.recall.ai/reference/bot_resume_recording_create.md
+  - https://docs.recall.ai/reference/bot_retrieve.md
+  - https://docs.recall.ai/reference/bot_send_chat_message_create.md
+  - https://docs.recall.ai/reference/bot_start_recording_create.md
+  - https://docs.recall.ai/reference/bot_stop_recording_create.md
+  - https://docs.recall.ai/reference/calendar_authenticate_create.md
+  - https://docs.recall.ai/reference/calendar_events_bot_create.md
+  - https://docs.recall.ai/reference/calendar_events_bot_destroy.md
+  - https://docs.recall.ai/reference/calendar_events_list.md
+  - https://docs.recall.ai/reference/calendar_events_retrieve.md
+  - https://docs.recall.ai/reference/calendar_meetings_list.md
+  - https://docs.recall.ai/reference/calendar_meetings_refresh_create.md
+  - https://docs.recall.ai/reference/calendar_meetings_retrieve.md
+  - https://docs.recall.ai/reference/calendar_meetings_update.md
+  - https://docs.recall.ai/reference/calendar_user_destroy.md
+  - https://docs.recall.ai/reference/calendar_user_disconnect_create.md
+  - https://docs.recall.ai/reference/calendar_user_retrieve.md
+  - https://docs.recall.ai/reference/calendar_user_update.md
+  - https://docs.recall.ai/reference/calendar_users_list.md
+  - https://docs.recall.ai/reference/calendars_access_token_create.md
+  - https://docs.recall.ai/reference/calendars_create.md
+  - https://docs.recall.ai/reference/calendars_destroy.md
+  - https://docs.recall.ai/reference/calendars_list.md
+  - https://docs.recall.ai/reference/calendars_partial_update.md
+  - https://docs.recall.ai/reference/calendars_retrieve.md
+  - https://docs.recall.ai/reference/google_login_groups_create.md
+  - https://docs.recall.ai/reference/google_login_groups_destroy.md
+  - https://docs.recall.ai/reference/google_login_groups_list.md
+  - https://docs.recall.ai/reference/google_login_groups_partial_update.md
+  - https://docs.recall.ai/reference/google_login_groups_retrieve.md
+  - https://docs.recall.ai/reference/google_login_groups_update.md
+  - https://docs.recall.ai/reference/google_logins_create.md
+  - https://docs.recall.ai/reference/google_logins_destroy.md
+  - https://docs.recall.ai/reference/google_logins_list.md
+  - https://docs.recall.ai/reference/google_logins_partial_update.md
+  - https://docs.recall.ai/reference/google_logins_retrieve.md
+  - https://docs.recall.ai/reference/google_logins_update.md
+  - https://docs.recall.ai/reference/meeting_direct_connect_create.md
+  - https://docs.recall.ai/reference/meeting_direct_connect_list.md
+  - https://docs.recall.ai/reference/meeting_direct_connect_retrieve.md
+  - https://docs.recall.ai/reference/meeting_metadata_destroy.md
+  - https://docs.recall.ai/reference/meeting_metadata_list.md
+  - https://docs.recall.ai/reference/meeting_metadata_partial_update.md
+  - https://docs.recall.ai/reference/meeting_metadata_retrieve.md
+  - https://docs.recall.ai/reference/participant_events_destroy.md
+  - https://docs.recall.ai/reference/participant_events_list.md
+  - https://docs.recall.ai/reference/participant_events_partial_update.md
+  - https://docs.recall.ai/reference/participant_events_retrieve.md
+  - https://docs.recall.ai/reference/realtime_endpoint_list.md
+  - https://docs.recall.ai/reference/realtime_endpoint_partial_update.md
+  - https://docs.recall.ai/reference/realtime_endpoint_retrieve.md
+  - https://docs.recall.ai/reference/recording_create_transcript_create.md
+  - https://docs.recall.ai/reference/recording_destroy.md
+  - https://docs.recall.ai/reference/recording_list.md
+  - https://docs.recall.ai/reference/recording_partial_update.md
+  - https://docs.recall.ai/reference/recording_retrieve.md
+  - https://docs.recall.ai/reference/sdk_upload_create.md
+  - https://docs.recall.ai/reference/sdk_upload_list.md
+  - https://docs.recall.ai/reference/sdk_upload_retrieve.md
+  - https://docs.recall.ai/reference/transcript_destroy.md
+  - https://docs.recall.ai/reference/transcript_list.md
+  - https://docs.recall.ai/reference/transcript_partial_update.md
+  - https://docs.recall.ai/reference/transcript_retrieve.md
+  - https://docs.recall.ai/reference/video_mixed_destroy.md
+  - https://docs.recall.ai/reference/video_mixed_list.md
+  - https://docs.recall.ai/reference/video_mixed_partial_update.md
+  - https://docs.recall.ai/reference/video_mixed_retrieve.md
+  - https://docs.recall.ai/reference/video_separate_destroy.md
+  - https://docs.recall.ai/reference/video_separate_list.md
+  - https://docs.recall.ai/reference/video_separate_partial_update.md
+  - https://docs.recall.ai/reference/video_separate_retrieve.md
+  - https://docs.recall.ai/reference/zoom_meetings_to_credentials_list.md
+  - https://docs.recall.ai/reference/zoom_oauth_app_logs_list.md
+  - https://docs.recall.ai/reference/zoom_oauth_apps_create.md
+  - https://docs.recall.ai/reference/zoom_oauth_apps_destroy.md
+  - https://docs.recall.ai/reference/zoom_oauth_apps_list.md
+  - https://docs.recall.ai/reference/zoom_oauth_apps_partial_update.md
+  - https://docs.recall.ai/reference/zoom_oauth_apps_retrieve.md
+  - https://docs.recall.ai/reference/zoom_oauth_credential_logs_list.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_access_token_retrieve.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_create.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_destroy.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_list.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_retrieve.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_sync_meetings_create.md
+  - https://docs.recall.ai/reference/zoom_oauth_credentials_validate_create.md
+  merge:
+    pages: 111
+    deduped: 2254
+    conflicts_kept_first: 0

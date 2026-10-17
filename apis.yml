@@ -148,16 +148,16 @@ common:
   url: blogs/blogs.json
 
 apis:
-- aid: recall-ai:recall-ai-api
-  name: Recall.ai AI API
-  description: The Ai API from Recall.ai — 65 operation(s) for ai.
+- aid: recall-ai:recall-ai-audio-mixed-api
+  name: Recall.ai Audio Mixed API
+  description: The audio_mixed API from Recall.ai — 2 operation(s) for audio_mixed.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
-  - Ai
+  - audio_mixed
   properties:
   - type: OpenAPI
-    url: openapi/recall-ai-api-openapi.yml
+    url: openapi/recall-ai-audio-mixed-api-openapi.yml
   - type: Documentation
     url: https://docs.recall.ai/docs/getting-started
   - type: GettingStarted
@@ -180,7 +180,617 @@ apis:
     url: json-schema/recall-ai-patched-bot-request-schema.json
   - type: JSONSchema
     url: json-schema/recall-ai-calendar-meeting-schema.json
-
+- aid: recall-ai:recall-ai-audio-separate-api
+  name: Recall.ai Audio Separate API
+  description: The audio_separate API from Recall.ai — 2 operation(s) for audio_separate.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - audio_separate
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-audio-separate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-billing-api
+  name: Recall.ai Billing API
+  description: The billing API from Recall.ai — 1 operation(s) for billing.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - billing
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-billing-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-bot-api
+  name: Recall.ai Bot API
+  description: The bot API from Recall.ai — 14 operation(s) for bot.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - bot
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-bot-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-calendar-v1-api
+  name: Recall.ai Calendar V1 API
+  description: The calendar-v1 API from Recall.ai — 7 operation(s) for calendar-v1.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - calendar-v1
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-calendar-v1-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-calendar-v2-api
+  name: Recall.ai Calendar V2 API
+  description: The calendar-v2 API from Recall.ai — 6 operation(s) for calendar-v2.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - calendar-v2
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-calendar-v2-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-google-login-api
+  name: Recall.ai Google Login API
+  description: The google-login API from Recall.ai — 2 operation(s) for google-login.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - google-login
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-google-login-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-google-login-group-api
+  name: Recall.ai Google Login Group API
+  description: The google-login-group API from Recall.ai — 2 operation(s) for google-login-group.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - google-login-group
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-google-login-group-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-meeting-direct-connect-api
+  name: Recall.ai Meeting Direct Connect API
+  description: >-
+    The meeting-direct-connect API from Recall.ai — 2 operation(s) for meeting-direct-connect.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - meeting-direct-connect
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-meeting-direct-connect-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-meeting-metadata-api
+  name: Recall.ai Meeting Metadata API
+  description: The meeting_metadata API from Recall.ai — 2 operation(s) for meeting_metadata.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - meeting_metadata
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-meeting-metadata-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-participant-events-api
+  name: Recall.ai Participant Events API
+  description: The participant_events API from Recall.ai — 2 operation(s) for participant_events.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - participant_events
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-participant-events-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-realtime-endpoint-api
+  name: Recall.ai Realtime Endpoint API
+  description: The realtime_endpoint API from Recall.ai — 2 operation(s) for realtime_endpoint.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - realtime_endpoint
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-realtime-endpoint-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-recording-api
+  name: Recall.ai Recording API
+  description: The recording API from Recall.ai — 3 operation(s) for recording.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - recording
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-recording-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-sdk-upload-api
+  name: Recall.ai SDK Upload API
+  description: The sdk_upload API from Recall.ai — 2 operation(s) for sdk_upload.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - sdk_upload
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-sdk-upload-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-transcript-api
+  name: Recall.ai Transcript API
+  description: The transcript API from Recall.ai — 2 operation(s) for transcript.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - transcript
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-transcript-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-video-mixed-api
+  name: Recall.ai Video Mixed API
+  description: The video_mixed API from Recall.ai — 2 operation(s) for video_mixed.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - video_mixed
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-video-mixed-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-video-separate-api
+  name: Recall.ai Video Separate API
+  description: The video_separate API from Recall.ai — 2 operation(s) for video_separate.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - video_separate
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-video-separate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-zoom-meetings-to-credentials-api
+  name: Recall.ai Zoom Meetings To Credentials API
+  description: >-
+    The zoom-meetings-to-credentials API from Recall.ai — 1 operation(s) for zoom-meetings-to-credentials.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - zoom-meetings-to-credentials
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-zoom-meetings-to-credentials-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-zoom-oauth-apps-api
+  name: Recall.ai Zoom OAUTH Apps API
+  description: The zoom-oauth-apps API from Recall.ai — 3 operation(s) for zoom-oauth-apps.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - zoom-oauth-apps
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-zoom-oauth-apps-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
+- aid: recall-ai:recall-ai-zoom-oauth-credentials-api
+  name: Recall.ai Zoom OAUTH Credentials API
+  description: >-
+    The zoom-oauth-credentials API from Recall.ai — 6 operation(s) for zoom-oauth-credentials.
+  humanURL: https://docs.recall.ai/docs/getting-started
+  baseURL: https://us-east-1.recall.ai/api/v1
+  tags:
+  - zoom-oauth-credentials
+  properties:
+  - type: OpenAPI
+    url: openapi/recall-ai-zoom-oauth-credentials-api-openapi.yml
+  - type: Documentation
+    url: https://docs.recall.ai/docs/getting-started
+  - type: GettingStarted
+    url: https://docs.recall.ai/v1.10/docs/quickstart
+  - type: Regions
+    url: https://docs.recall.ai/docs/regions
+  - type: Authentication
+    url: https://docs.recall.ai/reference/authentication
+  - type: Webhooks
+    url: https://docs.recall.ai/docs/bot-status-change-events
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-recording-config-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-get-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-patched-bot-request-schema.json
+  - type: JSONSchema
+    url: json-schema/recall-ai-calendar-meeting-schema.json
 x-readme-harvest:
   date: '2026-10-14'
   ops: 111

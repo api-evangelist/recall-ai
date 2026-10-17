@@ -1,0 +1,62 @@
+{
+  "provider": "recall-ai",
+  "sources": [
+    "recall-ai-api-openapi.yml"
+  ],
+  "outputs": [
+    "recall-ai-audio-mixed-api-openapi.yml",
+    "recall-ai-audio-separate-api-openapi.yml",
+    "recall-ai-billing-api-openapi.yml",
+    "recall-ai-bot-api-openapi.yml",
+    "recall-ai-calendar-v1-api-openapi.yml",
+    "recall-ai-calendar-v2-api-openapi.yml",
+    "recall-ai-google-login-api-openapi.yml",
+    "recall-ai-google-login-group-api-openapi.yml",
+    "recall-ai-meeting-direct-connect-api-openapi.yml",
+    "recall-ai-meeting-metadata-api-openapi.yml",
+    "recall-ai-participant-events-api-openapi.yml",
+    "recall-ai-realtime-endpoint-api-openapi.yml",
+    "recall-ai-recording-api-openapi.yml",
+    "recall-ai-sdk-upload-api-openapi.yml",
+    "recall-ai-transcript-api-openapi.yml",
+    "recall-ai-video-mixed-api-openapi.yml",
+    "recall-ai-video-separate-api-openapi.yml",
+    "recall-ai-zoom-meetings-to-credentials-api-openapi.yml",
+    "recall-ai-zoom-oauth-apps-api-openapi.yml",
+    "recall-ai-zoom-oauth-credentials-api-openapi.yml"
+  ],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
+  "errors": [],
+  "warnings": [
+    "recall-ai-api-openapi.yml: previously refined output kept for 111 operation(s) no archived document covers (e.g. /api/v1/audio_mixed/ get, /api/v1/audio_mixed/{id}/ delete, /api/v1/audio_mixed/{id}/ get); its other 0 operation(s) came from the archive and were dropped from it. The archive is incomplete for this provider \u2014 re-harvest to restore _original/ as the full source of truth."
+  ],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "recall-ai-api-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "recall-ai-api-openapi.yml: declared missing tag: audio_mixed",
+    "recall-ai-api-openapi.yml: declared missing tag: audio_separate",
+    "recall-ai-api-openapi.yml: declared missing tag: billing",
+    "recall-ai-api-openapi.yml: declared missing tag: bot",
+    "recall-ai-api-openapi.yml: declared missing tag: calendar-v1",
+    "recall-ai-api-openapi.yml: declared missing tag: calendar-v2",
+    "recall-ai-api-openapi.yml: declared missing tag: google-login",
+    "recall-ai-api-openapi.yml: declared missing tag: google-login-group",
+    "recall-ai-api-openapi.yml: declared missing tag: meeting-direct-connect",
+    "recall-ai-api-openapi.yml: declared missing tag: meeting_metadata",
+    "recall-ai-api-openapi.yml: declared missing tag: participant_events",
+    "recall-ai-api-openapi.yml: declared missing tag: realtime_endpoint",
+    "recall-ai-api-openapi.yml: declared missing tag: recording",
+    "recall-ai-api-openapi.yml: declared missing tag: sdk_upload",
+    "recall-ai-api-openapi.yml: declared missing tag: transcript",
+    "recall-ai-api-openapi.yml: declared missing tag: video_mixed",
+    "recall-ai-api-openapi.yml: declared missing tag: video_separate",
+    "recall-ai-api-openapi.yml: declared missing tag: zoom-meetings-to-credentials",
+    "recall-ai-api-openapi.yml: declared missing tag: zoom-oauth-apps",
+    "recall-ai-api-openapi.yml: declared missing tag: zoom-oauth-credentials",
+    "superseded outputs removed: recall-ai-api-openapi.yml",
+    "apis.yml register: written (+20 apis, 20 total)"
+  ],
+  "skipped": []
+}
