@@ -153,7 +153,8 @@ apis:
   description: The audio_mixed API from Recall.ai — 2 operation(s) for audio_mixed.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - audio_mixed
   properties:
   - type: OpenAPI
@@ -185,7 +186,8 @@ apis:
   description: The audio_separate API from Recall.ai — 2 operation(s) for audio_separate.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - audio_separate
   properties:
   - type: OpenAPI
@@ -218,6 +220,8 @@ apis:
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
+  - Billing
+  tags_raw:
   - billing
   properties:
   - type: OpenAPI
@@ -250,6 +254,8 @@ apis:
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
+  - Bot
+  tags_raw:
   - bot
   properties:
   - type: OpenAPI
@@ -314,6 +320,8 @@ apis:
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
+  - Calendar v2
+  tags_raw:
   - calendar-v2
   properties:
   - type: OpenAPI
@@ -442,7 +450,8 @@ apis:
   description: The meeting_metadata API from Recall.ai — 2 operation(s) for meeting_metadata.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - meeting_metadata
   properties:
   - type: OpenAPI
@@ -474,7 +483,8 @@ apis:
   description: The participant_events API from Recall.ai — 2 operation(s) for participant_events.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - participant_events
   properties:
   - type: OpenAPI
@@ -506,7 +516,8 @@ apis:
   description: The realtime_endpoint API from Recall.ai — 2 operation(s) for realtime_endpoint.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - realtime_endpoint
   properties:
   - type: OpenAPI
@@ -539,6 +550,8 @@ apis:
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
+  - Recording
+  tags_raw:
   - recording
   properties:
   - type: OpenAPI
@@ -570,7 +583,8 @@ apis:
   description: The sdk_upload API from Recall.ai — 2 operation(s) for sdk_upload.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - sdk_upload
   properties:
   - type: OpenAPI
@@ -603,6 +617,8 @@ apis:
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
   tags:
+  - Transcript
+  tags_raw:
   - transcript
   properties:
   - type: OpenAPI
@@ -634,7 +650,8 @@ apis:
   description: The video_mixed API from Recall.ai — 2 operation(s) for video_mixed.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - video_mixed
   properties:
   - type: OpenAPI
@@ -666,7 +683,8 @@ apis:
   description: The video_separate API from Recall.ai — 2 operation(s) for video_separate.
   humanURL: https://docs.recall.ai/docs/getting-started
   baseURL: https://us-east-1.recall.ai/api/v1
-  tags:
+  tags: []
+  tags_raw:
   - video_separate
   properties:
   - type: OpenAPI
