@@ -1,4 +1,4 @@
-# Recall.ai (recall-ai)
+# Recall.ai
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,65 +66,168 @@
 
 Recall.ai provides meeting bot infrastructure through a REST API that enables developers to programmatically join Zoom, Microsoft Teams, Google Meet, Webex, Slack Huddles, and other video conferencing platforms. The API delivers real-time and asynchronous access to meeting recordings, AI-powered transcription, participant metadata, and structured meeting data. Developers can deploy bots that stream audio and video, trigger calendar-driven automations, and extract actionable insights from meetings at scale. Recall.ai supports multi-region deployments across US West, US East, EU, and Asia-Pacific, with per-second usage billing and no monthly platform fee.
 
-APIs.json: https://raw.githubusercontent.com/api-evangelist/recall-ai/refs/heads/main/apis.yml
+**Areas:** Meeting Bots · Recording · Transcription · Video Conferencing · Zoom · Google Meet · Microsoft Teams · Real-Time · Artificial Intelligence · Infrastructure
 
-Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=recall-ai-api-evangelist&utm_content=repo
+## Recall.ai on APIs.io
 
-## Tags
+Everything profiled for Recall.ai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/recall-ai/](https://apis.io/providers/recall-ai/)** — or go straight to one of the APIs or properties below.
 
-- Meeting Bots
-- Recording
-- Transcription
-- Video Conferencing
-- Zoom
-- Google Meet
-- Microsoft Teams
-- Real-Time
-- AI
-- Infrastructure
+### APIs (20)
 
-## APIs
+- [Recall.ai Audio Mixed API](https://apis.io/apis/recall-ai/recall-ai-audio-mixed-api/) — The audio_mixed API from Recall.ai — 2 operation(s) for audio_mixed.
+- [Recall.ai Audio Separate API](https://apis.io/apis/recall-ai/recall-ai-audio-separate-api/) — The audio_separate API from Recall.ai — 2 operation(s) for audio_separate.
+- [Recall.ai Billing API](https://apis.io/apis/recall-ai/recall-ai-billing-api/) — The billing API from Recall.ai — 1 operation(s) for billing.
+- [Recall.ai Bot API](https://apis.io/apis/recall-ai/recall-ai-bot-api/) — The bot API from Recall.ai — 14 operation(s) for bot.
+- [Recall.ai Calendar V1 API](https://apis.io/apis/recall-ai/recall-ai-calendar-v1-api/) — The calendar-v1 API from Recall.ai — 7 operation(s) for calendar-v1.
+- [Recall.ai Calendar V2 API](https://apis.io/apis/recall-ai/recall-ai-calendar-v2-api/) — The calendar-v2 API from Recall.ai — 6 operation(s) for calendar-v2.
+- [Recall.ai Google Login API](https://apis.io/apis/recall-ai/recall-ai-google-login-api/) — The google-login API from Recall.ai — 2 operation(s) for google-login.
+- [Recall.ai Google Login Group API](https://apis.io/apis/recall-ai/recall-ai-google-login-group-api/) — The google-login-group API from Recall.ai — 2 operation(s) for google-login-group.
+- [Recall.ai Meeting Direct Connect API](https://apis.io/apis/recall-ai/recall-ai-meeting-direct-connect-api/) — The meeting-direct-connect API from Recall.ai — 2 operation(s) for meeting-direct-connect.
+- [Recall.ai Meeting Metadata API](https://apis.io/apis/recall-ai/recall-ai-meeting-metadata-api/) — The meeting_metadata API from Recall.ai — 2 operation(s) for meeting_metadata.
+- [Recall.ai Participant Events API](https://apis.io/apis/recall-ai/recall-ai-participant-events-api/) — The participant_events API from Recall.ai — 2 operation(s) for participant_events.
+- [Recall.ai Realtime Endpoint API](https://apis.io/apis/recall-ai/recall-ai-realtime-endpoint-api/) — The realtime_endpoint API from Recall.ai — 2 operation(s) for realtime_endpoint.
+- [Recall.ai Recording API](https://apis.io/apis/recall-ai/recall-ai-recording-api/) — The recording API from Recall.ai — 3 operation(s) for recording.
+- [Recall.ai SDK Upload API](https://apis.io/apis/recall-ai/recall-ai-sdk-upload-api/) — The sdk_upload API from Recall.ai — 2 operation(s) for sdk_upload.
+- [Recall.ai Transcript API](https://apis.io/apis/recall-ai/recall-ai-transcript-api/) — The transcript API from Recall.ai — 2 operation(s) for transcript.
+- [Recall.ai Video Mixed API](https://apis.io/apis/recall-ai/recall-ai-video-mixed-api/) — The video_mixed API from Recall.ai — 2 operation(s) for video_mixed.
+- [Recall.ai Video Separate API](https://apis.io/apis/recall-ai/recall-ai-video-separate-api/) — The video_separate API from Recall.ai — 2 operation(s) for video_separate.
+- [Recall.ai Zoom Meetings To Credentials API](https://apis.io/apis/recall-ai/recall-ai-zoom-meetings-to-credentials-api/) — The zoom-meetings-to-credentials API from Recall.ai — 1 operation(s) for zoom-meetings-to-credentials.
+- [Recall.ai Zoom OAUTH Apps API](https://apis.io/apis/recall-ai/recall-ai-zoom-oauth-apps-api/) — The zoom-oauth-apps API from Recall.ai — 3 operation(s) for zoom-oauth-apps.
+- [Recall.ai Zoom OAUTH Credentials API](https://apis.io/apis/recall-ai/recall-ai-zoom-oauth-credentials-api/) — The zoom-oauth-credentials API from Recall.ai — 6 operation(s) for zoom-oauth-credentials.
 
-| Name | Description | Docs |
-|------|-------------|------|
-| Recall.ai REST API | Bot management, recording retrieval, transcription, calendar integration, and real-time media streaming | https://docs.recall.ai/docs/getting-started |
+### Published properties
 
-## Plans / Rate Limits / FinOps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Resource | File |
-|----------|------|
-| Plans and Pricing | [plans/recall-ai-plans-pricing.yml](plans/recall-ai-plans-pricing.yml) |
-| Rate Limits | [rate-limits/recall-ai-rate-limits.yml](rate-limits/recall-ai-rate-limits.yml) |
-| FinOps Framework | [finops/recall-ai-finops.yml](finops/recall-ai-finops.yml) |
+#### AsyncAPI (1)
 
-**Pricing Summary:**
-- Pay As You Go: $0.50/hr recording, $0.15/hr transcription, $0.05/media-hr/30-days extended storage
-- First 5 hours of recording included as free trial credits
-- No monthly platform fee; per-second billing
-- Launch and Enterprise plans available with volume discounts
+Event-driven and webhook contracts.
 
-## Timestamps
+- [Recall Ai Webhooks](https://apis.io/asyncapis/recall-ai/recall-ai-webhooks/)
 
-| Field | Value |
-|-------|-------|
-| Created | 2026-06-12 |
-| Modified | 2026-06-12 |
+#### MCP servers (1)
 
-## Common
+Model Context Protocol servers that expose the API to agents.
 
-| Type | URL |
-|------|-----|
-| Website | https://www.recall.ai/ |
-| Documentation | https://docs.recall.ai/docs/getting-started |
-| GitHub Org | https://github.com/recallai |
-| LinkedIn | https://www.linkedin.com/company/recall-ai |
-| Blog | https://www.recall.ai/blog |
-| Pricing | https://www.recall.ai/pricing |
-| Status Page | https://statusgator.com/services/recallai |
-| X (Twitter) | https://twitter.com/recall_ai |
+- [recall-ai](https://apis.io/servers/recall-ai/recall-ai/)
 
-## Maintainers
+#### Agentic access (1)
 
-| Name | Email |
-|------|-------|
-| Kin Lane | kin@apievangelist.com |
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Recall Ai Agentic Access](https://apis.io/agentic-access/recall-ai/recall-ai-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [Bot](https://apis.io/schemas/recall-ai/recall-ai-bot/)
+- [BotGet](https://apis.io/schemas/recall-ai/recall-ai-bot-get/)
+- [BotRecordingConfigRequest](https://apis.io/schemas/recall-ai/recall-ai-bot-recording-config-request/)
+- [BotRequest](https://apis.io/schemas/recall-ai/recall-ai-bot-request/)
+- [CalendarMeeting](https://apis.io/schemas/recall-ai/recall-ai-calendar-meeting/)
+- [PatchedBotRequest](https://apis.io/schemas/recall-ai/recall-ai-patched-bot-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Recall Ai Context](https://apis.io/jsonld/recall-ai/recall-ai-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Recall.ai API Rules](https://apis.io/rules/recall-ai/recall-ai-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Recall Ai Authentication](https://apis.io/security/recall-ai/recall-ai-authentication/)
+- [Recall Ai Domain Security](https://apis.io/security/recall-ai/recall-ai-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Recall Ai Plans Pricing](https://apis.io/plans/recall-ai/recall-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Recall Ai Rate Limits](https://apis.io/rate-limits/recall-ai/recall-ai-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Recall Ai Finops](https://apis.io/finops/recall-ai/recall-ai-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.recall.ai/)
+- [Documentation](https://docs.recall.ai/docs/getting-started)
+- [Pricing](https://www.recall.ai/pricing)
+- [Blog](https://www.recall.ai/blog)
+- [Terms of service](https://www.recall.ai/terms-of-use)
+- [Privacy policy](https://www.recall.ai/privacy)
+- [Status](https://statusgator.com/services/recallai)
+
+## API Evangelist rating
+
+**Kin Score 51.2** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 71.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 32.9 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 52.6 |
+
+**Agent readiness 48.3** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | derived (partial credit) |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | derived (partial credit) |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | mostly (partial credit) |
+
+**Regulatory alignment 22.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/recall-ai/](https://apis.io/providers/recall-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Recall.ai: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/recall-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
